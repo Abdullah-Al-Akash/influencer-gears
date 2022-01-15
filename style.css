@@ -231,7 +231,13 @@ input {
         padding-top: 10px;
 }
 
+.order2 {
+        order: 2;
+}
 
+.order1 {
+        order: 1;
+}
 
 /* ----------------------------------------------------------------
 --------------------Media Query Style For Mobile-------------------
@@ -242,6 +248,10 @@ input {
         .logo h1 {
                 font-size: 30px;
                 padding-bottom: 30px;
+        }
+
+        .section-title {
+                font-size: 30px;
         }
 
         .main-section h1 {
@@ -264,12 +274,12 @@ input {
                 height: 100%;
         }
 
-        .contact-section {
-                margin-left: 0;
-                margin-right: 0;
-                display: block;
-                height: 1000px;
-                padding: 5%;
+        .order2 {
+                order: 1;
+        }
+
+        .order1 {
+                order: 2;
         }
 
         .banner-img img {
@@ -283,6 +293,35 @@ input {
                 column-gap: 25px;
         }
 
+        .see-more {
+                margin-top: 30px;
+        }
+
+        .see-more a {
+                font-size: 20px;
+        }
+
+        .contact-section {
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+                display: block;
+                height: 100%;
+                padding: 5%;
+        }
+
+        .contact-section img {
+                margin-bottom: 30px;
+        }
+
+        input {
+                width: 90%;
+        }
+
+        .input-msg {
+                width: 90%;
+        }
+
         footer img {
                 width: 100%;
         }
@@ -291,19 +330,38 @@ input {
 /* ----------------------------------------------------------------
 --------------------Media Query Style For Tab-------------------
 ------------------------------------------------------------------- */
-.order2 {
-        order: 2;
-}
-
-.order1 {
-        order: 1;
-}
 
 @media only screen and (min-width: 688px) and (max-width: 992px) {
+
         body {
                 margin-left: 0;
                 margin-right: 0;
                 width: 100%;
+        }
+
+        .section-title {
+                font-size: 35px;
+        }
+
+        .main-section h1 {
+                font-size: 32px;
+                margin-top: 20px;
+                line-height: 25px;
+        }
+
+        .main-section p {
+                margin-top: 10px;
+                font-size: 18px;
+                width: 90%;
+        }
+
+        .logo {
+                width: 90%;
+                text-align: center;
+        }
+
+        .logo h1 {
+                font-size: 40px;
         }
 
         .main-section {
@@ -311,15 +369,7 @@ input {
                 margin-right: 0;
                 display: flex;
                 padding: 5%;
-                height: 1000px;
-        }
-
-        .order2 {
-                order: 1;
-        }
-
-        .order1 {
-                order: 2;
+                height: 100%;
         }
 
         .contact-section {
@@ -330,7 +380,7 @@ input {
         }
 
         .main-section h1 {
-                font-size: 30px;
+                font-size: 35px;
         }
 
         .banner-img img {
@@ -338,33 +388,18 @@ input {
         }
 
         .products-section {
-                margin-left: 0;
-                margin-right: 0;
+                width: 90%;
+                margin: 0 auto;
                 display: grid;
-                grid-template-columns: repeat(2, 0.7fr);
+                grid-template-columns: repeat(2, 1fr);
         }
 
-        .match-details {
-                height: 1300px;
+
+        .see-more {
+                margin-top: 30px;
         }
 
-        .table-section .match-time-table {
-                margin-left: 0;
-                margin-right: 0;
-                flex-direction: column;
-                flex-wrap: wrap;
-        }
-
-        .score-table {
-                margin-left: 0;
-                margin-right: 0;
-                margin-top: 80px;
-        }
-
-        .score-part {
-                margin-left: 0;
-                margin-right: 0;
-                display: flex;
-                justify-content: center;
+        .see-more a {
+                font-size: 30px;
         }
 }
