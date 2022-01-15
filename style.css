@@ -6,7 +6,7 @@
 
 body {
         width: 100%;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Source Serif Pro', serif;
         padding: 0 auto;
 }
 
@@ -15,27 +15,46 @@ body p {
         font-size: 16px;
 }
 
+.logo {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 50px;
+}
+
+.logo h1 {
+        font-size: 35px;
+        font-weight: bold;
+}
+
+.brand-color {
+        color: rgb(224, 44, 109);
+}
+
 /* ----------------------------------------------------------------
 -----------------------Main Sections Style----------------------
 ---------------------------------------------------------------- */
 
 .main-section {
         display: flex;
-        justify-content: space-evenly;
-        height: 600px;
+        justify-content: end;
+        height: 500px;
         width: 80%;
         margin: 0 auto;
         align-items: center;
-        margin-bottom: 70px;
 }
 
-main h1 {
+.main-section h1 {
         font-size: 55px;
         font-weight: 700;
 }
 
+.main-section p {
+        width: 70%;
+        padding-bottom: 25px;
+        padding-top: 10px;
+}
+
 .btn {
-        margin-top: 25px;
         height: 44px;
         width: 168px;
         font-size: 16px;
@@ -48,8 +67,7 @@ main h1 {
 }
 
 .banner-img img {
-        Width: 556.01px;
-        Height: 456px;
+        width: 100%;
 }
 
 /* ----------------------------------------------------------------
@@ -62,7 +80,7 @@ main h1 {
 }
 
 /* ----------------------------------------------------------------
------------------------Players Section Style----------------------
+-----------------------Products Section Style----------------------
 ---------------------------------------------------------------- */
 
 .products-section {
@@ -76,14 +94,24 @@ main h1 {
         margin-bottom: 50px;
 }
 
+.product h3 {
+        font-weight: 400;
+}
+
+.product p {
+        line-height: 10px;
+        font-size: 14px;
+}
+
 .product {
-        height: 456px;
+        height: 470px;
         width: 330px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         padding: 15px;
         box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
 }
 
 .product-img img {
@@ -101,12 +129,38 @@ main h1 {
 
 .section-title {
         text-align: center;
-        padding-top: 50px;
-        margin-bottom: 50px;
+        padding-top: 60px;
+        margin-bottom: 30px;
 }
 
 .white {
         color: white;
+}
+
+.star-section {
+        display: flex;
+        align-items: center;
+}
+
+.star-section i {
+        color: orangered;
+        font-size: 12px;
+}
+
+.rating {
+        margin-left: 10px;
+        padding-bottom: 5px;
+}
+
+.see-more {
+        width: 85%;
+        text-decoration: none;
+        text-align: right;
+}
+
+.see-more a {
+        text-decoration: none;
+        font-weight: bold;
 }
 
 
@@ -115,34 +169,64 @@ main h1 {
 ---------------------------------------------------------------- */
 
 footer {
+        margin-top: 50px;
+        background-color: black;
         width: 100%;
-        margin: 158px 0 63px 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0px;
+        text-align: center;
+        padding: 50px 0;
+        color: white;
 }
 
-footer img {
-        height: 110px;
-        width: 483.87px;
+.icon {
+        margin-top: 15px;
 }
 
 .icon i {
         cursor: pointer;
         height: 32px;
         width: 32px;
-        background-color: lightgray;
+        background-color: rgb(68, 57, 57);
         text-align: center;
         padding-top: 8px;
         border-radius: 50%;
 }
 
-footer p {
-        font-size: 18px;
-        font-weight: 400;
+/* Contact Form */
+.contact-section {
+        display: flex;
+        justify-content: space-evenly;
+        height: 400px;
+        width: 80%;
+        margin: 0 auto;
+        align-items: center;
 }
+
+.contact-section img {
+        width: 100%;
+}
+
+input {
+        width: 70%;
+        margin: 5px 20px;
+        padding: 10px;
+        border-radius: 5px;
+}
+
+.input-msg {
+        width: 70%;
+        padding: 10px 10px 150px 10px;
+}
+
+.contact-btn {
+        margin: 5px 20px;
+        padding-top: 10px;
+}
+
+
 
 /* ----------------------------------------------------------------
 --------------------Media Query Style For Mobile-------------------
@@ -150,6 +234,14 @@ footer p {
 
 @media only screen and (min-width: 300px) and (max-width: 688px) {
         .main-section {
+                margin-left: 0;
+                margin-right: 0;
+                display: block;
+                height: 1000px;
+                padding: 5%;
+        }
+
+        .contact-section {
                 margin-left: 0;
                 margin-right: 0;
                 display: block;
@@ -219,6 +311,13 @@ footer p {
         .main-section {
                 margin-left: 0;
                 margin-right: 0;
+                display: block;
+                padding: 5%;
+                flex-direction: column;
+                height: 1000px;
+        }
+
+        .contact-section {
                 display: block;
                 padding: 5%;
                 flex-direction: column;
