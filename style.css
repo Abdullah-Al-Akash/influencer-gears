@@ -283,6 +283,7 @@ input {
         }
 
         .main-section {
+                text-align: center;
                 width: 90%;
                 margin-left: 0;
                 margin-right: 0;
@@ -343,7 +344,7 @@ input {
 --------------------Media Query Style For Tab-------------------
 ------------------------------------------------------------------- */
 
-@media only screen and (min-width: 688px) and (max-width: 992px) {
+@media only screen and (min-width: 688px) and (max-width: 1024px) {
 
         body {
                 margin-left: 0;
@@ -377,11 +378,12 @@ input {
         }
 
         .main-section {
+                padding: 20px 30px;
                 margin-left: 0;
                 margin-right: 0;
                 display: flex;
-                padding: 5%;
                 height: 100%;
+                width: 100%;
         }
 
         .main-section h1 {
@@ -425,3 +427,5 @@ input {
                 width: 90%;
         }
 }
+
+/* End CSS Style */
