@@ -245,6 +245,12 @@ input {
 
 @media only screen and (min-width: 250px) and (max-width: 688px) {
 
+        body {
+                margin-left: 0;
+                margin-right: 0;
+                width: 100%;
+        }
+
         .logo h1 {
                 font-size: 30px;
                 padding-bottom: 30px;
@@ -266,7 +272,7 @@ input {
         }
 
         .main-section {
-                width: 100%;
+                width: 90%;
                 margin-left: 0;
                 margin-right: 0;
                 display: block;
