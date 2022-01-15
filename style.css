@@ -303,11 +303,8 @@ input {
 
         .contact-section {
                 width: 100%;
-                margin-left: 0;
-                margin-right: 0;
                 display: block;
                 height: 100%;
-                padding: 5%;
         }
 
         .contact-section img {
@@ -372,13 +369,6 @@ input {
                 height: 100%;
         }
 
-        .contact-section {
-                display: block;
-                padding: 5%;
-                flex-direction: column;
-                height: 1000px;
-        }
-
         .main-section h1 {
                 font-size: 35px;
         }
@@ -394,12 +384,29 @@ input {
                 grid-template-columns: repeat(2, 1fr);
         }
 
-
         .see-more {
                 margin-top: 30px;
         }
 
         .see-more a {
                 font-size: 30px;
+        }
+
+        .contact-section {
+                display: block;
+                flex-direction: column;
+                height: 100%;
+        }
+
+        .contact-section img {
+                margin-bottom: 40px;
+        }
+
+        input {
+                width: 90%;
+        }
+
+        .input-msg {
+                width: 90%;
         }
 }
